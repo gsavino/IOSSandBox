@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OXk-li-QBo">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Main Table View Controller-->
+        <scene sceneID="6Ap-5o-S4x">
+            <objects>
+                <tableViewController id="UZF-bB-pb3" customClass="MainTableViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BP3-GA-Wqb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="customTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCellPlaces" id="ZCu-A3-0oa" userLabel="customTableViewCell" customClass="customTableViewCell" customModule="Places" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZCu-A3-0oa" id="hYd-eO-USQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="placeImg" image="acropolis" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4b-qo-L8x" userLabel="placeImg">
+                                            <rect key="frame" x="20" y="11" width="374" height="198"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="F4b-qo-L8x" firstAttribute="top" secondItem="hYd-eO-USQ" secondAttribute="topMargin" id="N8C-MU-Q9p"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="F4b-qo-L8x" secondAttribute="trailing" id="Rd4-E9-COR"/>
+                                        <constraint firstItem="F4b-qo-L8x" firstAttribute="leading" secondItem="hYd-eO-USQ" secondAttribute="leadingMargin" id="gCz-hf-qhb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="F4b-qo-L8x" secondAttribute="bottom" id="lKH-eK-MAS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="placeImg" destination="F4b-qo-L8x" id="cma-X0-2zD"/>
+                                    <segue destination="HWn-kH-5UT" kind="show" id="BJT-9x-xme"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UZF-bB-pb3" id="ynN-Rg-Oe6"/>
+                            <outlet property="delegate" destination="UZF-bB-pb3" id="umm-PM-TOb"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="unP-ND-O0S"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tia-9I-oJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456.52173913043481" y="122.28260869565219"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="cPY-RD-vmP">
+            <objects>
+                <viewController id="HWn-kH-5UT" customClass="DetailViewController" customModule="Places" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5lh-Zq-iCm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSm-H8-tBU">
+                                <rect key="frame" x="0.0" y="64" width="414" height="333"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zI5-eM-lqV">
+                                <rect key="frame" x="0.0" y="420" width="209" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yW0-Dm-j7D">
+                                <rect key="frame" x="217" y="451" width="170" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="rcZ-eL-n87"/>
+                    </view>
+                    <connections>
+                        <outlet property="countryLbl" destination="yW0-Dm-j7D" id="FqU-ZI-hfx"/>
+                        <outlet property="flagImg" destination="zI5-eM-lqV" id="ahg-WN-NfA"/>
+                        <outlet property="paisajeImg" destination="YSm-H8-tBU" id="Kc3-CE-EKN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3W-YI-t0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.7971014492755" y="120.65217391304348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VMi-PZ-OBu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OXk-li-QBo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RHN-pD-cFO">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UZF-bB-pb3" kind="relationship" relationship="rootViewController" id="z16-EL-e3P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTU-QM-2cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-329" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="acropolis" width="1920" height="1268"/>
+    </resources>
+</document>
