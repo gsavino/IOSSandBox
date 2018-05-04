@@ -162,6 +162,19 @@
                     <navigationItem key="navigationItem" id="jvh-WH-kIy"/>
                     <connections>
                         <outlet property="DisplayTxtEntry" destination="mws-RJ-FWd" id="k0w-3I-gpN"/>
+                        <outlet property="button0" destination="T8Q-q9-Ntp" id="UUZ-rl-Vnj"/>
+                        <outlet property="button1" destination="07N-SI-ytC" id="hEZ-Rq-tIq"/>
+                        <outlet property="button2" destination="JYC-83-by6" id="QS4-gL-L3a"/>
+                        <outlet property="button3" destination="w7Y-RE-m6a" id="iwR-dk-lpL"/>
+                        <outlet property="button4" destination="c61-Q6-UAB" id="d8e-UA-jS6"/>
+                        <outlet property="button5" destination="yYk-XF-wTc" id="VEj-y3-r4T"/>
+                        <outlet property="button6" destination="BTB-Td-mBp" id="kTl-Q4-juX"/>
+                        <outlet property="button7" destination="MHL-69-PVp" id="0t8-J6-KDi"/>
+                        <outlet property="button8" destination="hUT-90-kJz" id="VSH-gd-9w6"/>
+                        <outlet property="button9" destination="rCn-bp-sgK" id="uk3-OP-k5V"/>
+                        <outlet property="buttonBlank" destination="8gG-Al-BK1" id="nYP-ZB-Wgx"/>
+                        <outlet property="buttonDel" destination="DDY-1M-O8c" id="d3s-Ws-Ctj"/>
+                        <outlet property="buttonGo" destination="0hW-xb-Ij4" id="IaI-ou-YG2"/>
                         <outlet property="testModeSwitch" destination="WL1-2n-4OR" id="DcJ-XV-5Fu"/>
                     </connections>
                 </viewController>
