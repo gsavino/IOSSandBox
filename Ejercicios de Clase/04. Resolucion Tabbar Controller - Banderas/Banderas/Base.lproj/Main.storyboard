@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gIc-dn-gcp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Banderas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKT-cL-RuL">
+                                <rect key="frame" x="16" y="454" width="343" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="VER BANDERAS"/>
+                                <connections>
+                                    <segue destination="7fE-t1-pxb" kind="show" id="tfF-5E-jUt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vj0-YW-kmd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="132.68365817091455"/>
+        </scene>
+        <!--argentina-->
+        <scene sceneID="fYT-qF-OHd">
+            <objects>
+                <viewController id="2Az-Uf-uUW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3dQ-GQ-cJj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="argentina" translatesAutoresizingMaskIntoConstraints="NO" id="H59-7Y-zPc">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Seu-BY-rER"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="argentina" id="9e3-ez-ppf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b26-Jc-2Mm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="-367"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z2J-05-ncw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gIc-dn-gcp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iYI-I3-lMN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TDj-Zo-aCD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3k-rI-Gkg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="133"/>
+        </scene>
+        <!--croacia-->
+        <scene sceneID="jPc-GK-20t">
+            <objects>
+                <viewController id="hUL-cN-lc0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G1A-xe-LdG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="croacia" translatesAutoresizingMaskIntoConstraints="NO" id="TG8-8M-y9C">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="c5M-XL-aOe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="croacia" id="Bgx-18-9vn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAz-PX-wiP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="-29"/>
+        </scene>
+        <!--nigeria-->
+        <scene sceneID="TVx-AX-fAL">
+            <objects>
+                <viewController id="0Gw-uE-nZF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WSK-hS-hpb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nigeria" translatesAutoresizingMaskIntoConstraints="NO" id="AJZ-ez-EWF">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Aoj-jv-0NJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="nigeria" id="Yxf-qD-uRI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BWY-vB-1nu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2865" y="743"/>
+        </scene>
+        <!--islandia-->
+        <scene sceneID="wux-JV-Mre">
+            <objects>
+                <viewController id="PzK-WF-dFo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOZ-fM-6cU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="islandia" translatesAutoresizingMaskIntoConstraints="NO" id="0CL-9H-1dd">
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="e2b-f9-aj5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="islandia" id="Xyv-cy-ixW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBo-LU-f6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2209" y="925"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Fc-AH-XlG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7fE-t1-pxb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Ri-2T-m3h">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2Az-Uf-uUW" kind="relationship" relationship="viewControllers" id="TDH-hV-rAc"/>
+                        <segue destination="hUL-cN-lc0" kind="relationship" relationship="viewControllers" id="ss6-ML-Phg"/>
+                        <segue destination="0Gw-uE-nZF" kind="relationship" relationship="viewControllers" id="Kz6-th-6kA"/>
+                        <segue destination="PzK-WF-dFo" kind="relationship" relationship="viewControllers" id="pNH-SW-eTF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aay-a7-zJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="argentina" width="250" height="250"/>
+        <image name="croacia" width="256" height="192"/>
+        <image name="islandia" width="256" height="256"/>
+        <image name="nigeria" width="256" height="256"/>
+    </resources>
+</document>
