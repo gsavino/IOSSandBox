@@ -25,18 +25,25 @@ class TableViewController: UITableViewController,QtyModdifier {
                     Product(name:"Chocolate", price: 30.0)]
 
 
-    func increaseQty(producto p: Product) {
+    func increaseQty(celda c: UITableViewCell) {
+        let p = searchCell(c: c)
         p.quantity += 1
         computePrice()
         tableView.reloadData()
     }
     
-    func decreaseQty(producto p: Product) {
+    func decreaseQty(celda c: UITableViewCell) {
+        let p = searchCell(c: c)
         if p.quantity > 0 {
             p.quantity -= 1
             computePrice()
             tableView.reloadData()
         }
+    }
+    
+    func searchCell (c: UITableViewCell)->Product {
+        var indexPath = tableView.indexPath(for: c)!
+        return products[indexPath.row]
     }
     func computePrice(){
         totalPrice = 0.0

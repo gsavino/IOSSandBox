@@ -8,8 +8,8 @@
 
 import UIKit
 protocol QtyModdifier {
-    func increaseQty(producto: Product)
-    func decreaseQty(producto: Product)
+    func increaseQty(celda: UITableViewCell)
+    func decreaseQty(celda: UITableViewCell)
 }
 
 class ProductCellTableViewCell: UITableViewCell {
@@ -18,14 +18,14 @@ class ProductCellTableViewCell: UITableViewCell {
     @IBOutlet weak var QtyLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     var qtyDelegate: QtyModdifier?
-    var p : Product?
+
     
     @IBAction func restQty(_ sender: Any) {
-        qtyDelegate?.decreaseQty(producto: p!)
+        qtyDelegate?.decreaseQty(celda: self)
     }
     
     @IBAction func addQty(_ sender: Any) {
-        qtyDelegate?.increaseQty(producto: p!)
+        qtyDelegate?.increaseQty(celda: self)
     }
     
     func setUpProductCell(product: Product, delegate: QtyModdifier){
@@ -33,7 +33,7 @@ class ProductCellTableViewCell: UITableViewCell {
         productNameLbl.text = product.name
         priceLbl.text = "\(product.price)"
         QtyLbl.text = "\(product.quantity)"
-        p = product
+
     }
  
     override func awakeFromNib() {
