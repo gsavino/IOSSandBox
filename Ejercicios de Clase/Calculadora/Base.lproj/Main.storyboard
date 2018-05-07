@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculadora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-kx-o4d">
+                                <rect key="frame" x="69" y="154" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="reciboCBorradoParcial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igY-4R-fpo"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bNl-KQ-kaW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psX-u2-cWo">
+                                <rect key="frame" x="131" y="154" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="CE"/>
+                                <connections>
+                                    <action selector="reciboCEBorrarTodo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1X4-Za-M2W"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYi-oG-IQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDV-Zc-8hM">
+                                <rect key="frame" x="192" y="154" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="reciboBackErase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3RC-uR-xy9"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XM1-M3-Jc4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Zf-Ye-Kl2">
+                                <rect key="frame" x="69" y="186" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPj-M6-wPM"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BXq-Lk-O6T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-mK-iPc">
+                                <rect key="frame" x="131" y="186" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="drW-4o-rwv"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbb-b7-jgZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrQ-uT-Aoc">
+                                <rect key="frame" x="192" y="186" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AFN-JM-iHV"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTC-78-NL3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYS-Sl-P9X">
+                                <rect key="frame" x="253" y="154" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45031267400000002" green="0.98935919999999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="reciboOperador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q9B-P9-VK8"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zuv-kq-jRp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MO1-Tz-Yh6">
+                                <rect key="frame" x="253" y="186" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45031267404556274" green="0.98935920000076294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="reciboOperador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDf-j9-NEp"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVl-Gd-gTV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-AL-pPA">
+                                <rect key="frame" x="69" y="218" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCY-lY-53u"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yy0-cq-xbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjP-3z-yHr">
+                                <rect key="frame" x="131" y="218" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MXX-26-sud"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nEJ-ay-Vtv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raf-vq-3rR">
+                                <rect key="frame" x="192" y="218" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ev-SR-5fm"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgt-pi-gbj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3Q-Wm-ZPl">
+                                <rect key="frame" x="69" y="250" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7tO-ob-IfK"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNj-j5-bp5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bib-ah-CiO">
+                                <rect key="frame" x="131" y="250" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXX-0b-cLz"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NWp-fj-Cl4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nke-q0-1h9">
+                                <rect key="frame" x="192" y="250" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWc-Ct-u6M"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FoN-1E-ggY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-OI-mRw">
+                                <rect key="frame" x="253" y="218" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45031267400000002" green="0.98935919999999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="reciboOperador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7l-Et-SEP"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TgT-4c-qSr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-Ta-UZM">
+                                <rect key="frame" x="253" y="250" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45031267400000002" green="0.98935919999999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="reciboOperador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qmq-ij-Ilb"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Im-UC-dij"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUC-2O-X3s">
+                                <rect key="frame" x="69" y="283" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="+-"/>
+                                <connections>
+                                    <action selector="reciboCambioSigno:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQG-39-gBt"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ut-1w-z6r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heh-wN-SAd">
+                                <rect key="frame" x="131" y="283" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LiA-nM-nBq"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="et4-Ju-8Rf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjh-5u-Sq9">
+                                <rect key="frame" x="192" y="283" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="reciboNumero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LBt-0V-LbG"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OmZ-ik-CQl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzW-Hu-BL3">
+                                <rect key="frame" x="253" y="283" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.68910581174150121" green="0.85130927175468185" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="reciboOperador:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOa-gb-fVg"/>
+                                    <action selector="sonidoTeclas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bI-2u-g6S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taM-wW-cS0">
+                                <rect key="frame" x="38" y="60" width="299" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CE_BorradoTotal" destination="psX-u2-cWo" id="YDD-Gv-HaS"/>
+                        <outlet property="C_BorradoParcial" destination="Hjv-kx-o4d" id="Pg3-wY-LMJ"/>
+                        <outlet property="backErase" destination="MDV-Zc-8hM" id="urK-W9-tHW"/>
+                        <outlet property="cero" destination="heh-wN-SAd" id="CUp-3j-DWD"/>
+                        <outlet property="cinco" destination="GjP-3z-yHr" id="DbM-AL-z85"/>
+                        <outlet property="cuatro" destination="YCW-AL-pPA" id="ZiB-AD-h3l"/>
+                        <outlet property="dividir" destination="OYS-Sl-P9X" id="En2-2g-ex7"/>
+                        <outlet property="dos" destination="bib-ah-CiO" id="9QR-sd-UeK"/>
+                        <outlet property="multiplicar" destination="MO1-Tz-Yh6" id="X8q-rD-EE1"/>
+                        <outlet property="nueve" destination="8bC-Xf-vdC" id="D2Z-17-SQv"/>
+                        <outlet property="ocho" destination="D6q-mK-iPc" id="DJE-H3-b02"/>
+                        <outlet property="pantalla" destination="taM-wW-cS0" id="aZK-YF-uTq"/>
+                        <outlet property="punto" destination="Cjh-5u-Sq9" id="9FL-nj-so7"/>
+                        <outlet property="restar" destination="8fb-OI-mRw" id="64k-uf-evc"/>
+                        <outlet property="seis" destination="raf-vq-3rR" id="oh0-8d-XaA"/>
+                        <outlet property="siete" destination="4Zf-Ye-Kl2" id="osU-ut-Bxn"/>
+                        <outlet property="sumar" destination="RLm-Ta-UZM" id="IlK-nW-bzY"/>
+                        <outlet property="tres" destination="nke-q0-1h9" id="c47-uc-v7S"/>
+                        <outlet property="uno" destination="N3Q-Wm-ZPl" id="5V5-2G-UDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
