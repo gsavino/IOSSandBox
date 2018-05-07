@@ -8,7 +8,12 @@
 
 import UIKit
 
-class TableViewController: UITableViewController,QtyModdifier {
+class TableViewController: UITableViewController,QtyModdifier, ListenerNuevoProducto {
+    func agregar(_ prod: Product) {
+        products.append(prod)
+        tableView.reloadData()
+    }
+    
 
     @IBOutlet weak var totalFooterLbl: UILabel!
     
@@ -130,14 +135,18 @@ class TableViewController: UITableViewController,QtyModdifier {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+    if let destination = segue.destination as? InputViewController{
+        destination.setearListeneer(listener: self)
+        }
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

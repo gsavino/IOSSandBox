@@ -8,8 +8,31 @@
 
 import UIKit
 
+protocol ListenerNuevoProducto {
+    func agregar(_ prod: Product)
+}
+
 class InputViewController: UIViewController {
 
+    var listenerNuevoProduct : ListenerNuevoProducto?
+
+    @IBOutlet weak var tituloTF: UITextField!
+    @IBOutlet weak var priceTF: UITextField!
+    
+    func setearListeneer(listener: ListenerNuevoProducto){
+        listenerNuevoProduct = listener
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        if let titulo = tituloTF.text ,
+        let precio = priceTF.text,
+        let precioDouble = Double(precio) {
+            let producto = Product(name: titulo, price: precioDouble)
+            listenerNuevoProduct?.agregar(producto)
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

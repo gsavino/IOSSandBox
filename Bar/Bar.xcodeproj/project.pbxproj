@@ -14,6 +14,7 @@
 		81869287209CEEBE00323815 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81869286209CEEBE00323815 /* TableViewController.swift */; };
 		81869289209CEECE00323815 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81869288209CEECE00323815 /* Product.swift */; };
 		8186928B209CEF0800323815 /* ProductCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186928A209CEF0800323815 /* ProductCellTableViewCell.swift */; };
+		8186928D20A0E3AC00323815 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8186928C20A0E3AC00323815 /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		81869286209CEEBE00323815 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		81869288209CEECE00323815 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		8186928A209CEF0800323815 /* ProductCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCellTableViewCell.swift; sourceTree = "<group>"; };
+		8186928C20A0E3AC00323815 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				81869278209CEE0700323815 /* Main.storyboard */,
 				8186927D209CEE0700323815 /* LaunchScreen.storyboard */,
 				81869280209CEE0700323815 /* Info.plist */,
+				8186928C20A0E3AC00323815 /* InputViewController.swift */,
 			);
 			path = Bar;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81869275209CEE0700323815 /* AppDelegate.swift in Sources */,
+				8186928D20A0E3AC00323815 /* InputViewController.swift in Sources */,
 				8186928B209CEF0800323815 /* ProductCellTableViewCell.swift in Sources */,
 				81869287209CEEBE00323815 /* TableViewController.swift in Sources */,
 				81869289209CEECE00323815 /* Product.swift in Sources */,
