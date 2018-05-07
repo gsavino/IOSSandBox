@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController,QtyModdifier {
+
+    @IBOutlet weak var totalFooterLbl: UILabel!
+    
     var totalPrice = 0.0
     var products = [Product(name:"Coca Cola", price: 40.0),
                     Product(name:"Pepsi", price: 40.0),
@@ -50,6 +53,7 @@ class TableViewController: UITableViewController,QtyModdifier {
         for p in products {
             totalPrice += p.price * Double(p.quantity)
         }
+        totalFooterLbl.text = "Precio total : $ \(totalPrice)"
         print("Precio total : \(totalPrice)")
     }
     
