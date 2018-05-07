@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController,QtyModdifier {
-
+    var totalPrice = 0.0
     var products = [Product(name:"Coca Cola", price: 40.0),
                     Product(name:"Pepsi", price: 40.0),
                     Product(name:"Fanta", price: 40.0),
@@ -25,12 +25,25 @@ class TableViewController: UITableViewController,QtyModdifier {
                     Product(name:"Chocolate", price: 30.0)]
 
 
-    func increaseQty() {
-        
+    func increaseQty(producto p: Product) {
+        p.quantity += 1
+        computePrice()
+        tableView.reloadData()
     }
     
-    func decreaseQty() {
-        
+    func decreaseQty(producto p: Product) {
+        if p.quantity > 0 {
+            p.quantity -= 1
+            computePrice()
+            tableView.reloadData()
+        }
+    }
+    func computePrice(){
+        totalPrice = 0.0
+        for p in products {
+            totalPrice += p.price * Double(p.quantity)
+        }
+        print("Precio total : \(totalPrice)")
     }
     
     override func viewDidLoad() {
