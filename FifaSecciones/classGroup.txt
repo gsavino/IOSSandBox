@@ -1,0 +1,4 @@
+class Group {
+    var teams: [ [String: Any] ] = []
+}
+

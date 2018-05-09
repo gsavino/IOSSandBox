@@ -1,0 +1,161 @@
+var groupA = Group()
+groupA.teams = [
+    [
+        "id": 1,
+        "name": "Russia"
+    ],
+    [
+        "id": 2,
+        "name": "Saudi Arabia"
+    ],
+    [
+        "id": 3,
+        "name": "Egypt"
+    ],
+    [
+        "id": 4,
+        "name": "Uruguay"
+    ]
+]
+
+var groupB = Group()
+groupB.teams = [
+    [
+        "id": 5,
+        "name": "Portugal"
+    ],
+    [
+        "id": 6,
+        "name": "Spain"
+    ],
+    [
+        "id": 7,
+        "name": "Morocco"
+    ],
+    [
+        "id": 8,
+        "name": "Iran"
+    ]
+]
+
+var groupC = Group()
+groupC.teams = [
+    [
+        "id": 9,
+        "name": "France"
+    ],
+    [
+        "id": 10,
+        "name": "Australia"
+    ],
+    [
+        "id": 11,
+        "name": "Peru",
+        "fifaCode": "PER"
+    ],
+    [
+        "id": 12,
+        "name": "Denmark"
+    ]
+]
+
+var groupD = Group()
+groupD.teams = [
+    [
+        "id": 13,
+        "name": "Argentina"
+    ],
+    [
+        "id": 14,
+        "name": "Iceland"
+    ],
+    [
+        "id": 15,
+        "name": "Croatia"
+    ],
+    [
+        "id": 16,
+        "name": "Nigeria"
+    ]
+]
+
+var groupE = Group()
+groupE.teams = [
+    [
+        "id": 17,
+        "name": "Brazil"
+    ],
+    [
+        "id": 18,
+        "name": "Switzerland"
+    ],
+    [
+        "id": 19,
+        "name": "Costa Rica"
+    ],
+    [
+        "id": 20,
+        "name": "Serbia"
+    ]
+]
+
+var groupF = Group()
+groupF.teams = [
+    [
+        "id": 21,
+        "name": "Germany"
+    ],
+    [
+        "id": 22,
+        "name": "Mexico"
+    ],
+    [
+        "id": 23,
+        "name": "Sweden"
+    ],
+    [
+        "id": 24,
+        "name": "South Korea"
+    ]
+]
+
+var groupG = Group()
+groupG.teams = [
+    [
+        "id": 25,
+        "name": "Belgium"
+    ],
+    [
+        "id": 26,
+        "name": "Panama"
+    ],
+    [
+        "id": 27,
+        "name": "Tunisia"
+    ],
+    [
+        "id": 28,
+        "name": "England"
+    ]
+]
+
+var groupH = Group()
+groupH.teams = [
+    [
+        "id": 29,
+        "name": "Poland"
+    ],
+    [
+        "id": 30,
+        "name": "Senegal"
+    ],
+    [
+        "id": 31,
+        "name": "Colombia"
+    ],
+    [
+        "id": 32,
+        "name": "Japan"
+    ]
+]
+
