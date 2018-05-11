@@ -15,7 +15,7 @@ class Player{
     var height: Double
     var weight: Int
     var isStarter: Bool
-    init (name: String, lastName:String, age:Int, height: Double, weight: Int, isStarter:Bool = false) {
+    init (name: String, lastName:String, age:Int, height: Double, weight: Int, isStarter: Bool = false) {
         self.name = name
         self.lastName = lastName
         self.age = age

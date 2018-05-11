@@ -16,6 +16,9 @@
 		81CF27A320A38A23003275D7 /* mainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF27A220A38A23003275D7 /* mainTableViewController.swift */; };
 		81CF27A520A38B03003275D7 /* ClubCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF27A420A38B03003275D7 /* ClubCellTableViewCell.swift */; };
 		81CF27A720A392F4003275D7 /* DetallClubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF27A620A392F4003275D7 /* DetallClubTableViewController.swift */; };
+		9E93F87220A4A35C003E3B56 /* JugadorDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F87120A4A35C003E3B56 /* JugadorDetalleViewController.swift */; };
+		9E93F87420A4BBD2003E3B56 /* addClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F87320A4BBD2003E3B56 /* addClubViewController.swift */; };
+		9E93F87620A4BBE1003E3B56 /* addPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93F87520A4BBE1003E3B56 /* addPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		81CF27A220A38A23003275D7 /* mainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewController.swift; sourceTree = "<group>"; };
 		81CF27A420A38B03003275D7 /* ClubCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCellTableViewCell.swift; sourceTree = "<group>"; };
 		81CF27A620A392F4003275D7 /* DetallClubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallClubTableViewController.swift; sourceTree = "<group>"; };
+		9E93F87120A4A35C003E3B56 /* JugadorDetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JugadorDetalleViewController.swift; sourceTree = "<group>"; };
+		9E93F87320A4BBD2003E3B56 /* addClubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addClubViewController.swift; sourceTree = "<group>"; };
+		9E93F87520A4BBE1003E3B56 /* addPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +73,14 @@
 				81CF279E20A38506003275D7 /* Player.swift */,
 				81CF27A220A38A23003275D7 /* mainTableViewController.swift */,
 				81CF27A420A38B03003275D7 /* ClubCellTableViewCell.swift */,
+				81CF27A620A392F4003275D7 /* DetallClubTableViewController.swift */,
+				9E93F87120A4A35C003E3B56 /* JugadorDetalleViewController.swift */,
 				81CF279020A384DF003275D7 /* Main.storyboard */,
 				81CF279320A384DF003275D7 /* Assets.xcassets */,
 				81CF279520A384DF003275D7 /* LaunchScreen.storyboard */,
 				81CF279820A384DF003275D7 /* Info.plist */,
-				81CF27A620A392F4003275D7 /* DetallClubTableViewController.swift */,
+				9E93F87320A4BBD2003E3B56 /* addClubViewController.swift */,
+				9E93F87520A4BBE1003E3B56 /* addPlayerViewController.swift */,
 			);
 			path = FootballClub;
 			sourceTree = "<group>";
@@ -148,12 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E93F87620A4BBE1003E3B56 /* addPlayerViewController.swift in Sources */,
 				81CF27A520A38B03003275D7 /* ClubCellTableViewCell.swift in Sources */,
 				81CF27A720A392F4003275D7 /* DetallClubTableViewController.swift in Sources */,
 				81CF27A320A38A23003275D7 /* mainTableViewController.swift in Sources */,
 				81CF279F20A38506003275D7 /* Player.swift in Sources */,
+				9E93F87420A4BBD2003E3B56 /* addClubViewController.swift in Sources */,
 				81CF278D20A384DF003275D7 /* AppDelegate.swift in Sources */,
 				81CF27A120A38524003275D7 /* Club.swift in Sources */,
+				9E93F87220A4A35C003E3B56 /* JugadorDetalleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

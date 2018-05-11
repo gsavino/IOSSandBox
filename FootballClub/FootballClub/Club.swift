@@ -15,6 +15,7 @@ class Club {
     var defenders: [Player]
     var midFielders : [Player]
     var forwards: [Player]
+    var favourite : Bool
     init (name:String, country:String, isFavorite: Bool = false) {
         self.name = name
         self.country = country
@@ -23,6 +24,7 @@ class Club {
         self.defenders = []
         self.midFielders = []
         self.forwards = []
+        self.favourite = false
     }
 }
 
