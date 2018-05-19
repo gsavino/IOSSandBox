@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReadIphone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WF-ZE-Odm">
+                                <rect key="frame" x="16" y="120" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZs-lW-OFx">
+                                <rect key="frame" x="16" y="171" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-zj-OdV">
+                                <rect key="frame" x="16" y="222" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIr-Nb-ZT8">
+                                <rect key="frame" x="16" y="273" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxP-qB-Zi8">
+                                <rect key="frame" x="16" y="324" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FxP-qB-Zi8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9Bc-hd-a6m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2WF-ZE-Odm" secondAttribute="trailing" constant="16" id="BMb-q2-1sQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FxP-qB-Zi8" secondAttribute="trailing" constant="16" id="Bfe-p8-TR1"/>
+                            <constraint firstItem="s2X-zj-OdV" firstAttribute="top" secondItem="FZs-lW-OFx" secondAttribute="bottom" constant="30" id="D8N-Gy-g7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZs-lW-OFx" secondAttribute="trailing" constant="16" id="I6Q-UF-sFW"/>
+                            <constraint firstItem="2WF-ZE-Odm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="LLz-wX-RYn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VIr-Nb-ZT8" secondAttribute="trailing" constant="16" id="LfU-Y1-uoW"/>
+                            <constraint firstItem="VIr-Nb-ZT8" firstAttribute="top" secondItem="s2X-zj-OdV" secondAttribute="bottom" constant="30" id="MOU-nG-avM"/>
+                            <constraint firstItem="FZs-lW-OFx" firstAttribute="top" secondItem="2WF-ZE-Odm" secondAttribute="bottom" constant="30" id="Nf0-IW-ZRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s2X-zj-OdV" secondAttribute="trailing" constant="16" id="NjV-jL-1gb"/>
+                            <constraint firstItem="FZs-lW-OFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qyx-bV-Csh"/>
+                            <constraint firstItem="FxP-qB-Zi8" firstAttribute="top" secondItem="VIr-Nb-ZT8" secondAttribute="bottom" constant="30" id="XSh-ma-6as"/>
+                            <constraint firstItem="VIr-Nb-ZT8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mX5-92-iiA"/>
+                            <constraint firstItem="2WF-ZE-Odm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oAw-eO-lee"/>
+                            <constraint firstItem="s2X-zj-OdV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tEc-jy-nD5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="conditionLbl" destination="FxP-qB-Zi8" id="y2B-8i-oW9"/>
+                        <outlet property="currencyLbl" destination="s2X-zj-OdV" id="JFn-2X-sJZ"/>
+                        <outlet property="idLbl" destination="FZs-lW-OFx" id="vbr-jf-feE"/>
+                        <outlet property="priceLbl" destination="VIr-Nb-ZT8" id="pU3-Rf-s24"/>
+                        <outlet property="titleLbl" destination="2WF-ZE-Odm" id="UTI-Wv-7Pl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Tango</key>
+	<array>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>Tengo</string>
+				<string>Que falta que me hacés</string>
+				<string>Bandoneon Arrabalero</string>
+				<string>Cantor de mi barrio</string>
+				<string>Viajo a Buenos Aires</string>
+				<string>Morena</string>
+				<string>Criollito</string>
+				<string>Carrousel</string>
+			</array>
+			<key>artist</key>
+			<string>Roberto Goyeneche</string>
+			<key>title</key>
+			<string>El Cantor de mi barrio</string>
+		</dict>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>El Dia que me quieras</string>
+				<string>Mi Buenos Aires Querido</string>
+				<string>Volver</string>
+				<string>Yira, Yira</string>
+				<string>Bandoneón arrabalero</string>
+			</array>
+			<key>artist</key>
+			<string>Carlos Gardel</string>
+			<key>title</key>
+			<string>Los mejores Tangos de Gardel</string>
+		</dict>
+	</array>
+	<key>Rock</key>
+	<array>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>Respectable</string>
+				<string>Miss You</string>
+				<string>When The Whip Comes Down</string>
+				<string>Some Girls</string>
+				<string>Lies</string>
+				<string>For Away eyes</string>
+				<string>Beast of Burden</string>
+			</array>
+			<key>artist</key>
+			<string>Rolling Stones</string>
+			<key>title</key>
+			<string>Some girls</string>
+		</dict>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>California Girls</string>
+				<string>I Get Around</string>
+				<string>Surfin&apos; Safari</string>
+				<string>Surfin USA</string>
+				<string>Fun, Fun, Fun</string>
+			</array>
+			<key>artist</key>
+			<string>The Beach Boys</string>
+			<key>title</key>
+			<string>Sounds of Summer</string>
+		</dict>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>Let It Be</string>
+				<string>Two Of Us</string>
+				<string>Dig A Pony</string>
+				<string>Across The Universe</string>
+				<string>Maggie Mae</string>
+				<string>I&apos;ve Got A Feeling</string>
+				<string>One After 909</string>
+				<string>Get Back</string>
+				<string>For You Blue</string>
+			</array>
+			<key>artist</key>
+			<string>The Beatles</string>
+			<key>title</key>
+			<string>Let it be</string>
+		</dict>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>His hand in mine</string>
+				<string>Known Only to Him</string>
+				<string>Swing Down Sweet Chariot</string>
+				<string>Mansion over the Hilltop</string>
+				<string>In the Garden</string>
+			</array>
+			<key>artist</key>
+			<string>Elvis</string>
+			<key>title</key>
+			<string>Peace In The Valley</string>
+		</dict>
+	</array>
+	<key>Clasica</key>
+	<array>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>Sonata Nro 1</string>
+				<string>Sonata Nro 2</string>
+				<string>Sonata Nro 3</string>
+				<string>Sonata Nro 4</string>
+			</array>
+			<key>artist</key>
+			<string>Amadeus Mozart</string>
+			<key>title</key>
+			<string>Sonatas para Piano</string>
+		</dict>
+	</array>
+	<key>Pop</key>
+	<array>
+		<dict>
+			<key>songs</key>
+			<array>
+				<string>Baby Be Mine</string>
+				<string>The Girl Is Mine</string>
+				<string>When The Whip Comes Down</string>
+				<string>Beat It</string>
+				<string>Human Nature</string>
+			</array>
+			<key>artist</key>
+			<string>Michael Jackson</string>
+			<key>title</key>
+			<string>Thriller</string>
+		</dict>
+	</array>
+</dict>
+</plist>
